@@ -1,5 +1,7 @@
 import { request } from '../../../../util/request'
 
+//the http request are being used via an object that's imported. 
+
 export function blueprints(state = {}, action) {
   switch (action.type) {
     case 'FETCHING_BLUEPRINTS_SUCCESS':

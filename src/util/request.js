@@ -1,5 +1,7 @@
 import { notify } from '../shell/store/notifications.js'
 
+//request page is where the user interaction functions are held and then exported out as a function. 
+
 export function request(url, opts = {}) {
   if (!url) {
     throw new Error('A URL is required to make a request')
