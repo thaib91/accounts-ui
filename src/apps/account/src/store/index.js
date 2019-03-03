@@ -1,6 +1,9 @@
 import { request } from '../../../../util/request'
 import { notify } from '../../../../shell/store/notifications'
 
+//taking in specific account information from a node_env file. 
+//taking in the endpoint via redux. 
+
 export function addEmail(name, address) {
   return dispatch => {
     return request(`${CONFIG.API_ACCOUNTS}/users/emails`, {
